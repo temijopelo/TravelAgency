@@ -4,15 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/77b49a01e6.js" crossorigin="anonymous"></script>
+
+    <!-- google fonts  -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet"> -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+    </style>
+
+    <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="font-serif">
     <div
-        class="bg-[url('img/mesut-kaya-bCwgFb-llPs-unsplash.jpg')] h-screen bg-cover bg-no-repeat bg-center object-fill">
+        class="bg-[url('img/mesut-kaya-bCwgFb-llPs-unsplash.jpg')] min-h-screen bg-cover bg-no-repeat bg-center object-fill">
         <nav class="flex justify-between p-4 w-[80%] m-auto">
-            <h5>ADVENTURES</h5>
+            <h5 class="font-libre">ADVENTURES</h5>
             <ul class="hidden md:flex justify-evenly gap-5">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Packages</a></li>
@@ -56,12 +68,81 @@
                         Destination</button>
                 </div>
             </div>
-            <div class="hero-img md:w-[50%] md:h-96 ">
-                <img class="md:w-[500px] md:h-[600px] md:rounded-2xl m-auto" src="/img/nikldn-t-6GW8T6Jsc-unsplash.jpg"
+            <div class="  md:w-[50%] md:h-96 ">
+                <img class=" md:w-[500px] md:h-[600px] md:rounded-2xl m-auto" src="/img/nikldn-t-6GW8T6Jsc-unsplash.jpg"
                     alt="">
             </div>
         </div>
     </div>
+
+    <aside class="p-8">
+        <h5 class="font-semibold py-5">Natural Tourism</h5>
+
+        <h3 class="text-2xl font-bold py-5">Are You Ready To Hiking?</h3>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 md:grid-rows-2 grid-rows-3 gap-10">
+            <div class="min-h-64 rounded-xl p-2 shadow-xl hover:transform transition-transform hover:scale-105">
+                <img class="rounded-xl min-h-40" src="img/clarisse-meyer-FnFsXj_vz0g-unsplash.jpg" alt="" srcset="">
+                <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur nisi quaerat
+                    possimus cum nostrum
+                    id obcaecati sit </p>
+            </div>
+            <div class="min-h-64 rounded-xl p-2 shadow-xl hover:transform transition-transform hover:scale-105">
+                <img class="rounded-xl min-h-40" src="img/holly-mandarich-c2aLW24QqGc-unsplash.jpg" alt="" srcset="">
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ex iure vel vero
+                    numquam expedita
+                    vitae laborum esse sunt .</p>
+            </div>
+            <div class="min-h-64 rounded-xl p-2 shadow-xl hover:transform transition-transform hover:scale-105">
+                <img class="rounded-xl min-h-40" src="img/oliver-sjostrom-gofDws5Y_CU-unsplash.jpg" alt="">
+                <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo facilis eum vel
+                    similique harum
+                    accusamus quasi, accusantium </p>
+
+            </div>
+            <div class="min-h-64 rounded-xl p-2 shadow-xl hover:transform transition-transform hover:scale-105">
+                <img class="rounded-xl min-h-40" src="img/jakob-owens-HgZqt4MkIyQ-unsplash.jpg" alt="">
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quisquam voluptas
+                    blanditiis ipsum eos
+                    maxime! Placeat quaerat tempora</p>
+
+            </div>
+            <div class="min-h-64 rounded-xl p-2 shadow-xl hover:transform transition-transform hover:scale-105">
+                <img class="rounded-xl min-h-40" src="img/jeremy-allouche-3HOxb68WbEA-unsplash.jpg" alt="">
+                <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo quod eligendi
+                    quisquam, quidem, eaque
+                    ut assumenda laudantium velit</p>
+            </div>
+            <div class="min-h-64 rounded-xl p-2 shadow-xl hover:transform transition-transform hover:scale-105">
+                <img class="rounded-xl min-h-40" src="img/bhupendra-singh-3n0FEnkoa4s-unsplash.jpg" alt="">
+                <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo quod eligendi
+                    quisquam, quidem, eaque
+                    ut assumenda laudantium velit</p>
+            </div>
+        </div>
+    </aside>
 </body>
+
+<footer class="bg-[#254336] text-white">
+    <h2 class="text-5xl font-extrabold p-5 md:w-[60%]">Are You Ready to Explore The Mount Merbabu?</h2>
+
+    <button class="bg-white text-black py-2 px-4 rounded-xl ml-5">Booking Now</button>
+
+    <div class="flex flex-wrap p-5 gap-5 justify-between md:w-[80%] m-auto md:p-7">
+        <form action="">
+            <label for="link"> Subscribe our newsletter</label>
+            <br>
+            <input type="email" placeholder="your email here">
+        </form>
+        <ul class="flex gap-4">
+            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </div>
+
+    <p class="text-center p-4 text-sm">Copyright &copy; 2024 Mt Saints. All rights reserved.</p>
+</footer>
 
 </html>
